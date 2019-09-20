@@ -2,6 +2,9 @@ import os
 
 path_to_ddsm = "/content/drive/My\ Drive/DataSet/figment.csee.usf.edu/pub/DDSM/"
 
+if os.path.isdir(path_to_ddsm):
+	print("is dir")  
+
 for root, subFolders, file_names in os.walk(path_to_ddsm):
     for file_name in file_names:
         if ".LJPEG" in file_name:

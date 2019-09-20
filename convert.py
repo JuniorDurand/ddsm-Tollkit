@@ -10,6 +10,7 @@ for root, subFolders, file_names in os.walk(path_to_ddsm):
             out_path = out_path.split('.LJPEG')[0] + ".jpg"
             
             cmd = './ljpeg.py "{0}" "{1}" --visual --scale 1.0'.format(ljpeg_path, out_path)
+            print (cmd)
             os.system(cmd)
 
 print('done')

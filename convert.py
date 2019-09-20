@@ -1,6 +1,6 @@
 import os
 
-path_to_ddsm = "/content/drive/My\ Drive/DataSet/figment.csee.usf.edu/pub/DDSM/"
+path_to_ddsm = "./content/drive/My\ Drive/DataSet/figment.csee.usf.edu/pub/DDSM/"
 
 if os.path.isdir(path_to_ddsm):
 	print("is dir")  

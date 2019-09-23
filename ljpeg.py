@@ -20,6 +20,7 @@ PATTERN = re.compile('\sC:(\d+)\s+N:(\S+)\s+W:(\d+)\s+H:(\d+)\s')
 
 def read (path):
     cmd = '%s -d -s %s' % (BIN, path)
+    print("cmd : " + cmd)
     l = subprocess.check_output(cmd, shell=True)
     #print l
     m = re.search(PATTERN, l)
